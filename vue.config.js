@@ -81,11 +81,18 @@ module.exports = {
                     "^/newApi": "", //http://192.168.1.65:8886/api => http://192.168.1.65:8886/
                 },
             },
-            "ftp/": {
-                target: "http://119.3.66.94:8090/", //域名
+            "/upload": {
+                target: "http://192.168.1.94:8892/", //域名
                 changeOrigin: true,
                 pathRewrite: {
-                    "^/newApi": "", //http://192.168.1.65:8886/api => http://192.168.1.65:8886/
+                    "^/upload": "^/upload", //http://192.168.1.65:8886/api => http://192.168.1.65:8886/
+                },
+            },
+            "/DDCFILE": {
+                target: "http://27.150.173.9:9002/", //域名
+                changeOrigin: true,
+                pathRewrite: {
+                    "^/DDCFILE": "^/DDCFILE", //http://192.168.1.65:8886/api => http://192.168.1.65:8886/
                 },
             },
         },

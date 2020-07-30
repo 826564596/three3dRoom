@@ -3,7 +3,9 @@
         <!-- 3D场景 -->
         <div id="container" @click="click($event)" @dblclick="doubleClick($event)" @mousemove.prevent="move($event)" @mousedown.prevent="down($event)" @mouseup.prevent="up($event)">
         </div>
-
+        <!-- <video id="video" autoplay loop muted>
+            <source src="./video/videoPlane.mp4">
+        </video> -->
     </div>
 </template>
 
@@ -67,7 +69,7 @@ export default {
         initCamera() {
             this.camera = new Three.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 0.1, 10000);
             this.camera.position.set(0, 250, 500);
-            this.camera.lookAt(0, 50, 50);
+            this.camera.lookAt(1, 1, 1);
         },
 
         /**渲染器 */
@@ -120,8 +122,8 @@ export default {
         /**添加环境 */
         createEnvironment() {
 
-            // this.scene.background = new Three.TextureLoader()
-            //     .load(require("../assets/image/bg.jpg"));
+            this.scene.background = new Three.TextureLoader()
+                .load(require("../assets/image/bg.jpg"));
 
         },
         /**场景中的内容 */
@@ -129,30 +131,37 @@ export default {
             let that = this;
             this.createFloor();
             this.createEnvironment();
-
+            this.createTable();
             // 加载平台
             let mtlLoader = new MTLLoader();
-            mtlLoader.load(`${that.publicPath}/model/ssss.mtl`, function (materials1) {
+
+
+            // let gltfLoader1 = new GLTFLoader();
+            // gltfLoader1.load(`${that.publicPath}/model/car/Huracan.gltf`, (obj) => {
+            //     that.addobj(obj);
+            // })
+
+            mtlLoader.load(`${that.publicPath}/model/66666.mtl`, function (materials1) {
                 let objLoader = new OBJLoader();
                 objLoader.setMaterials(materials1);
-                objLoader.load(`${that.publicPath}/model/ssss.obj`, function (obj) {
+                objLoader.load(`${that.publicPath}/model/66666.obj`, function (obj) {
 
                     // let texture1 = new TGALoader().load(`${that.publicPath}/model/crate_color8.tga`);
                     // let texture2 = new TGALoader().load(`${that.publicPath}/model/crate_grey8.tga`);
 
                     // let texture1 = new TGALoader().load(`${that.publicPath}/model/dimian_t.tga`);
                     // let texture2 = new TGALoader().load(`${that.publicPath}/model/J_N.tga`);
-                    let texture3 = new TGALoader().load(`${that.publicPath}/model/J_T01_看图王(3).tga`);
-                    console.log(texture3);
-                    obj.traverse(function (child) {
+                    // let texture3 = new TGALoader().load(`${that.publicPath}/model/J_T01(1).png`);
+                    // // obj.map = texture3;
+                    // obj.traverse(function (child) {
 
-                        if (child instanceof Three.Mesh) {
-                            //将贴图赋于材质
-                            child.material.map = texture3;
-                            //重点，没有该句会导致PNG无法正确显示透明效果
-                            child.material.transparent = true;
-                        }
-                    });
+                    //     if (child instanceof Three.Mesh) {
+                    //         //将贴图赋于材质
+                    //         child.material.map = texture3;
+                    //         //重点，没有该句会导致PNG无法正确显示透明效果
+                    //         child.material.transparent = true;
+                    //     }
+                    // });
                     that.addobj(obj);
                 })
             })
@@ -162,8 +171,56 @@ export default {
             console.log(obj);
             obj.position.z = 0;
             obj.position.x = 0;
-            // obj.rotation.y = -0.5 * Math.PI;
+            // obj.rotation.x = -0.5 * Math.PI;
+            obj.scale.set(0.1, 0.1, 0.1);
             this.scene.add(obj);
+        },
+
+
+        /** 创建精灵图 */
+        createTable() {
+
+            let geometry = new Three.Geometry();
+            geometry.vertices.push(
+                new Three.Vector3(-100, 100, 100),
+                new Three.Vector3(100, 100, -100)
+            );
+            geometry.colors.push(
+                new Three.Color(0x444444),
+                new Three.Color(0xFF0000)
+            )
+            let material = new Three.LineBasicMaterial({ vertexColors: true });
+            let line = new Three.Line(geometry, material);
+
+            this.scene.add(line);
+
+            let spriteMap = new Three.TextureLoader().load(require("../assets/image/yuan1.png"));
+            let spriteMaterial = new Three.SpriteMaterial({
+                transparent: true,
+                map: spriteMap,
+                side: Three.DoubleSide
+            });
+
+
+            let sprite1 = new Three.Sprite(spriteMaterial);
+
+            //     // 轴1
+            sprite1.scale.set(10, 10, 10);
+            sprite1.position.set(-100, 100, 100);
+            // sprite1.center = new Vector2(1, 0);
+            //     // 轴2
+            //     let sprite2 = sprite1.clone();
+            //     sprite2.position.set(17, 40, 22);
+
+
+
+
+
+            this.scene.add(sprite1);
+
+
+
+
         },
         /** 动画函数 */
         animate() {
