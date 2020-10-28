@@ -82,7 +82,7 @@ module.exports = {
                 },
             },
             "/upload": {
-                target: "http://192.168.1.94:8892/", //域名
+                target: "http://192.168.1.65:8892/", //域名
                 changeOrigin: true,
                 pathRewrite: {
                     "^/upload": "^/upload", //http://192.168.1.65:8886/api => http://192.168.1.65:8886/

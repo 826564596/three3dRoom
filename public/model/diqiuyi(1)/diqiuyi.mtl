@@ -1,0 +1,46 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# �������ļ�:19.08.2020 09:18:00
+
+newmtl Mat3d66_598775_6_471
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka model/diqiuyi(1)/baise1.png
+	map_Kd model/diqiuyi(1)/baise1.png
+
+newmtl Mat3d66_598775_73_714
+	Ns 10.0000
+	Ni 1.5000
+	d 0.8000
+	Tr 0.2000
+	Tf 0.8000 0.8000 0.8000 
+	illum 2
+	Ka 1.0000 1.0000 1.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.4353 0.8941 0.9765
+	map_Ka model/diqiuyi(1)/model/diqiuyi(1)/timg2.png
+	map_Kd model/diqiuyi(1)/timg2.png
+	map_Ke model/diqiuyi(1)/timg2.png
+
+newmtl Mat3d66_598775_89_944
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 1.0000 1.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.0000 0.0000 0.0000
+	Ke 1.0000 1.0000 1.0000
+	map_Ka model/diqiuyi(1)/model/diqiuyi(1)/803248-20200305142954037-195792468(1).png
+	map_Kd model/diqiuyi(1)/803248-20200305142954037-195792468(1).png
+	map_Ke model/diqiuyi(1)/803248-20200305142954037-195792468(1).png

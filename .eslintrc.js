@@ -15,6 +15,6 @@ module.exports = {
         "no-unused-vars": "off",
         "no-sparse-arrays": "off",
         "no-undef": "off",
-        "no-var": "error",
+        "no-var": "off",
     },
 };

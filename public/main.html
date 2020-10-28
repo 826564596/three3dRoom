@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!--引入 element-ui 的样式，-->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入element 的组件库-->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <title>泉州市人才创新共享联盟成果展</title>
+</head>
+
+<body>
+    <noscript>
+        <strong>在泉州市委人才办和泉州市科技局的支持下，泉州市人才创新共享联盟是由全市重点研究机构和高新金属企业等各类人才聚集平台单位组成的。</strong>
+    </noscript>
+    <div id="container" class="index">
+        <div v-show="start == false" style="width:100%;height:100%;">
+            <el-progress v-if="percent < 100" class="percent" type="circle" :percentage="percent"></el-progress>
+            <template v-if="percent >= 100 && start == false">
+
+                <img v-if="ifMobile" v-on:click="showIframe" class="percent" src="../assets/image/start-s.png"
+                    style="width: 160px;">
+                <img v-else v-on:click="showIframe" class="percent" src="../assets/image/start.png"
+                    style="width: 80px;">
+            </template>
+        </div>
+        <iframe id="iframe" :src="`/mu`"></iframe>
+    </div>
+
+</body>
+<script>
+
+</script>
+<style>
+    #container {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    #containerSmall {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+    .video {
+        height: 80%;
+        width: 80%;
+    }
+
+    .border {
+        border: 1px red solid;
+    }
+
+    @media screen and (max-width: 1920px) and (min-width: 737px) {
+        .detail-image {
+            width: 1200px;
+            height: 800px;
+        }
+
+        .el-dialog {
+            width: 90% !important;
+            height: 90%;
+            background-color: #000 !important;
+            margin: 5vh auto 50px !important;
+
+        }
+
+        .el-dialog__headerbtn {
+            width: 40px;
+            height: 40px;
+            font-size: 36px !important;
+            right: -70px !important;
+            top: -40px !important;
+        }
+
+        .percent {
+            left: 20%;
+            top: 40%;
+            position: absolute;
+        }
+
+        .tool {
+            position: fixed;
+            bottom: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .tool2 {
+            position: fixed;
+            bottom: 76px;
+            left: 50%;
+            transform: translateX(-100%);
+        }
+
+        .index {
+            background: url(../assets/image/index.jpg) 50% no-repeat;
+            background-size: 100% 100%;
+            overflow: hidden;
+        }
+
+        .item {
+            display: inline-block;
+            font-size: 14px;
+            padding: 5px 15px;
+        }
+
+
+
+        .item2 {
+            font-size: 14px;
+            padding: 5px 15px;
+        }
+
+    }
+
+    .el-progress__text {
+        color: #ffffff
+    }
+
+    @media screen and (max-width: 736px) {
+        .detail-image {
+            width: 300px;
+            height: 600px;
+        }
+
+        .el-dialog {
+            width: 90% !important;
+            background-color: #000 !important;
+            height: 70%;
+            margin: 5vh auto 0 !important;
+        }
+
+        .el-dialog__headerbtn {
+            width: 15px;
+            height: 15px;
+            font-size: 30px !important;
+            right: 15px !important;
+            top: -30px !important;
+        }
+
+        .video {
+            height: 100%;
+            width: 100%;
+        }
+
+        .percent {
+            left: 28%;
+            top: 38%;
+            position: absolute;
+        }
+
+        .tool {
+            position: fixed;
+            bottom: 2px;
+            left: 50%;
+        }
+
+        .tool2 {
+            position: fixed;
+            bottom: 50px;
+            left: 70%;
+            transform: translateX(-100%);
+        }
+
+        .index {
+            background: url(../assets/image/index-s.jpg) 50% no-repeat;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .item {
+            display: inline-block;
+            font-size: 14px;
+            padding: 2px 5px;
+        }
+
+
+        .item2 {
+            font-size: 14px;
+            padding: 5px 15px;
+        }
+
+    }
+
+    .el-dialog__body,
+    .el-dialog__header {
+        background-color: #000;
+    }
+
+    .picture {
+        height: 100%;
+        width: 100%;
+    }
+
+    .picture-img {
+        width: auto;
+        height: auto;
+        max-width: 70%;
+        max-height: 90%;
+    }
+
+    .el-dialog__body {
+        padding: 0 !important;
+    }
+
+    #controler {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100px;
+        height: 100px;
+        background: url(../assets/image/direction.png);
+        background-size: cover;
+    }
+
+    .dot-map {
+        font-size: 30px;
+        width: auto !important;
+        height: auto !important;
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        padding: 2px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid;
+        border-radius: 30px;
+    }
+
+    .hide-map {
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        right: 1px;
+        top: 1px;
+    }
+
+    .tool-box {
+        background: hsla(0, 0%, 100%, 0.9);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.18);
+        border-radius: 25px;
+        display: fixed;
+        color: #333;
+        padding: 0 20px;
+    }
+
+    .tool-box2 {
+        background: hsla(0, 0%, 100%, 0.9);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.18);
+        border-radius: 25px;
+        display: fixed;
+        color: #333;
+        padding: 10px 0px;
+    }
+
+    .item-active {
+        color: #409eff;
+    }
+
+    .scontent {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    .smap {
+        width: 330px;
+        height: 200px;
+    }
+
+    .bigger {
+        position: absolute;
+        left: 1px;
+        top: 1px;
+        width: 55px;
+        height: 55px;
+    }
+</style>
+
+</html>

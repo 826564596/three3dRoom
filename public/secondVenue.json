@@ -1,0 +1,237 @@
+{
+    "secondVenue": [{
+            "name": "11",
+            "x": 250,
+            "z": -3000,
+            "left": "",
+            "right": "",
+            "top": "",
+            "bottom": "",
+            "hotDots": [{
+                "type": "picture",
+                "name": "11-1",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/11/1.png",
+                "x": 490,
+                "y": 220,
+                "z": -3240
+            }, {
+                "type": "picture",
+                "name": "11-2",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/11/2.png",
+                "x": 490,
+                "y": 220,
+                "z": -3180
+            }, {
+                "type": "picture",
+                "name": "11-3",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/11/3.png",
+                "x": 490,
+                "y": 154,
+                "z": -3060
+            }, {
+                "type": "picture",
+                "name": "11-4",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/11/4.png",
+                "x": 490,
+                "y": 86,
+                "z": -3116
+            }, {
+                "type": "picture",
+                "name": "11-5",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/11/5.png",
+                "x": 490,
+                "y": 150,
+                "z": -2910
+            }, {
+                "type": "picture",
+                "name": "11-6",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/11/6.png",
+                "x": 490,
+                "y": 150,
+                "z": -2756
+            }, {
+                "type": "picture",
+                "name": "11-7",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/11/7.png",
+                "x": 10,
+                "y": 150,
+                "z": -3130
+            }]
+        },
+
+        {
+            "name": "12",
+            "x": 250,
+            "z": -3800,
+            "left": "",
+            "right": "",
+            "top": "",
+            "bottom": "",
+            "hotDots": [{
+                "type": "picture",
+                "name": "12-1",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/12/1.png",
+                "x": 490,
+                "y": 200,
+                "z": -3760
+            }, {
+                "type": "picture",
+                "name": "12-2",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/12/2.png",
+                "x": 490,
+                "y": 90,
+                "z": -3760
+            }, {
+                "type": "picture",
+                "name": "12-4",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/12/4.png",
+                "x": 10,
+                "y": 165,
+                "z": -3600
+            }, {
+                "type": "picture",
+                "name": "12-5",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/12/5.png",
+                "x": 10,
+                "y": 165,
+                "z": -3830
+            }, {
+                "type": "picture",
+                "name": "12-6",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/12/6.png",
+                "x": 10,
+                "y": 100,
+                "z": -3830
+            }]
+        },
+        {
+            "name": "13",
+            "x": 250,
+            "z": -4600,
+            "left": "",
+            "right": "",
+            "top": "",
+            "bottom": ""
+        },
+        {
+            "name": "14",
+            "x": 950,
+            "z": -4600,
+            "left": "",
+            "right": "",
+            "top": "",
+            "bottom": "",
+            "hotDots": [{
+                "type": "picture",
+                "name": "14-1",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/14/1.jpg",
+                "x": 700,
+                "y": 112,
+                "z": -4940
+            }, {
+                "type": "picture",
+                "name": "14-2",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/14/2.png",
+                "x": 950,
+                "y": 220,
+                "z": -4940
+            }, {
+                "type": "picture",
+                "name": "14-3",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/14/3.png",
+                "x": 860,
+                "y": 120,
+                "z": -4940
+            }, {
+                "type": "picture",
+                "name": "14-4",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/14/4.png",
+                "x": 1036,
+                "y": 120,
+                "z": -4940
+            }]
+        },
+
+        {
+            "name": "15",
+            "x": 1650,
+            "z": -4600,
+            "left": "",
+            "right": "",
+            "top": "",
+            "bottom": "",
+            "hotDots": [{
+                "type": "picture",
+                "name": "15-1",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/15/1.png",
+                "x": 1480,
+                "y": 144,
+                "z": -4940
+            }, {
+                "type": "picture",
+                "name": "15-2",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/15/2.png",
+                "x": 1550,
+                "y": 144,
+                "z": -4940
+            }, {
+                "type": "picture",
+                "name": "15-3",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/15/3.png",
+                "x": 1700,
+                "y": 215,
+                "z": -4940
+            }, {
+                "type": "picture",
+                "name": "15-4",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/15/4.png",
+                "x": 1760,
+                "y": 110,
+                "z": -4940
+            }]
+        },
+
+        {
+            "name": "16",
+            "x": 1650,
+            "z": -3800,
+            "left": "",
+            "right": "",
+            "top": "",
+            "bottom": "",
+            "hotDots": []
+        },
+
+        {
+            "name": "17",
+            "x": 1650,
+            "z": -3000,
+            "left": "",
+            "right": "",
+            "top": "",
+            "bottom": "",
+            "hotDots": [{
+                "type": "picture",
+                "name": "17-5",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/17/5.jpg",
+                "x": 1410,
+                "y": 150,
+                "z": -2796
+            }, {
+                "type": "picture",
+                "name": "17-6",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/17/6.png",
+                "x": 1410,
+                "y": 100,
+                "z": -3000
+            }, {
+                "type": "picture",
+                "name": "17-7",
+                "url": "http://119.3.66.94:8090/LOCALFILE/detailFile/17/7.jpg",
+                "x": 1410,
+                "y": 150,
+                "z": -3220
+            }]
+        }
+    ]
+}

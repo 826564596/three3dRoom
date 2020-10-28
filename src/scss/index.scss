@@ -6,3 +6,252 @@
     left: 0px;
     // transform: scale(0.6);
 }
+
+#containerSmall {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.video {
+    height: 80%;
+    width: 80%;
+}
+
+.border {
+    border: 1px red solid;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 737px) {
+    .detail-image {
+        width: 1200px;
+        height: 800px;
+    }
+
+    .el-dialog {
+        width: 90% !important;
+        height: 90%;
+        background-color: #000 !important;
+        margin: 5vh auto 50px !important;
+
+        // border: 1px red solid !important;
+    }
+
+    .el-dialog__headerbtn {
+        width: 40px;
+        height: 40px;
+        font-size: 36px !important;
+        right: -70px !important;
+        top: -40px !important;
+    }
+
+    .percent {
+        left: 20%;
+        top: 40%;
+        position: absolute;
+    }
+
+    .tool {
+        position: fixed;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .tool2 {
+        position: fixed;
+        bottom: 76px;
+        left: 50%;
+        transform: translateX(-100%);
+    }
+
+    .index {
+        background: url(../assets/image/index.jpg) 50% no-repeat;
+        background-size: 100% 100%;
+        overflow: hidden;
+    }
+
+    .item {
+        display: inline-block;
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+
+    // .item:hover {
+    //     color: #409eff;
+    // }
+
+    .item2 {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+
+}
+
+.el-progress__text {
+    color: #ffffff
+}
+
+@media screen and (max-width: 736px) {
+    .detail-image {
+        width: 300px;
+        height: 600px;
+    }
+
+    .el-dialog {
+        width: 90% !important;
+        background-color: #000 !important;
+        height: 70%;
+        margin: 5vh auto 0 !important;
+    }
+
+    .el-dialog__headerbtn {
+        width: 15px;
+        height: 15px;
+        // border: 2px #909399 solid !important;
+        // color: #fff !important;
+        // background-color: #000 !important;
+        font-size: 30px !important;
+        right: 15px !important;
+        top: -30px !important;
+    }
+
+    .video {
+        height: 100%;
+        width: 100%;
+    }
+
+    .percent {
+        left: 28%;
+        top: 38%;
+        position: absolute;
+    }
+
+    .tool {
+        position: fixed;
+        bottom: 2px;
+        left: 50%;
+    }
+
+    .tool2 {
+        position: fixed;
+        bottom: 50px;
+        left: 70%;
+        transform: translateX(-100%);
+    }
+
+    .index {
+        background: url(../assets/image/index-s.jpg) 50% no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .item {
+        display: inline-block;
+        font-size: 14px;
+        padding: 2px 5px;
+    }
+
+
+    .item2 {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+
+}
+
+.el-dialog__body,
+.el-dialog__header {
+    background-color: #000;
+}
+
+.picture {
+    height: 100%;
+    width: 100%;
+}
+
+.picture-img {
+    width: auto;
+    height: auto;
+    max-width: 70%;
+    max-height: 90%;
+}
+
+.el-dialog__body {
+    padding: 0 !important;
+}
+
+#controler {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    background: url(../assets/image/direction.png);
+    background-size: cover;
+}
+
+.dot-map {
+    font-size: 30px;
+    width: auto !important;
+    height: auto !important;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    paddign: 2px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid;
+    border-radius: 30px;
+}
+
+.hide-map {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}
+
+.tool-box {
+    background: hsla(0, 0%, 100%, 0.9);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.18);
+    border-radius: 25px;
+    display: fixed;
+    color: #333;
+    padding: 0 20px;
+}
+
+.tool-box2 {
+    background: hsla(0, 0%, 100%, 0.9);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.18);
+    border-radius: 25px;
+    display: fixed;
+    color: #333;
+    padding: 10px 0px;
+}
+
+.item-active {
+    color: #409eff;
+}
+
+.scontent {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.smap {
+    width: 330px;
+    height: 200px;
+}
+
+.bigger {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 55px;
+    height: 55px;
+}
